@@ -4,24 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Festival da Cultura Japonesa">
 
     <title>Festival de Degustação Japonesa</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
 <header>
-
     <h1>Venha para a nossa 5ª edição do Festival de Degustação Japonesa!</h1>
 
     <nav>
@@ -29,16 +25,17 @@
             <li><a href="#evento">Evento</a></li>
             <li><a href="#programacao">Programação</a></li>
             <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#chefs">Chefs</a></li>
+            <li><a href="#video">Vídeo</a></li>
+            <li><a href="#local">Local</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-
 </header>
 
 <main>
 
 <section id="evento">
-
     <h2>Semana da Cultura Japonesa</h2>
 
     <p>
@@ -47,115 +44,299 @@
     </p>
 
     <p>
-        Data: 20/09/2026 <br>
+        Data: 20/09/2026<br>
         Local: Centro Cultural Oriental
     </p>
-
 </section>
+
 
 <section id="programacao">
+    <h2>Programação do Dia</h2>
 
-    <h2>Programação</h2>
+    <p>
+        Confira as atividades preparadas para a Semana da Cultura Japonesa.
+        Clique em uma atividade para saber mais.
+    </p>
 
-    <article>
-        <h3>10h - Oficina de Sushi</h3>
-    </article>
+    <div class="programacao">
 
-    <article>
-        <h3>14h - Degustação de Yakisoba</h3>
-    </article>
+        <article class="atividade">
+            <div class="atividade-titulo">
+                <span class="horario">10h</span>
 
-    <article>
-        <h3>17h - Apresentação Cultural</h3>
-    </article>
+                <div>
+                    <h3>Oficina de Sushi</h3>
+                    <p>Aprenda sobre a preparação do sushi.</p>
+                </div>
 
+                <span class="seta">+</span>
+            </div>
+
+            <div class="atividade-detalhes">
+                <p>
+                    Nesta oficina, os visitantes poderão conhecer
+                    um pouco mais sobre a preparação do sushi,
+                    desde o preparo do arroz até a montagem dos pratos.
+                </p>
+
+                <p>
+                    A atividade é voltada para pessoas que desejam
+                    conhecer melhor a gastronomia japonesa e suas
+                    técnicas tradicionais.
+                </p>
+            </div>
+        </article>
+
+
+        <article class="atividade">
+            <div class="atividade-titulo">
+                <span class="horario">14h</span>
+
+                <div>
+                    <h3>Degustação de Yakisoba</h3>
+                    <p>Experimente nosso Yakisoba especial.</p>
+                </div>
+
+                <span class="seta">+</span>
+            </div>
+
+            <div class="atividade-detalhes">
+                <p>
+                    Durante a degustação, os visitantes poderão
+                    experimentar o Yakisoba preparado especialmente
+                    para o festival.
+                </p>
+
+                <p>
+                    Será uma oportunidade para conhecer melhor
+                    esse prato e apreciar seus diferentes ingredientes.
+                </p>
+            </div>
+        </article>
+
+
+        <article class="atividade">
+            <div class="atividade-titulo">
+                <span class="horario">17h</span>
+
+                <div>
+                    <h3>Apresentação Cultural</h3>
+                    <p>Conheça um pouco mais da cultura japonesa.</p>
+                </div>
+
+                <span class="seta">+</span>
+            </div>
+
+            <div class="atividade-detalhes">
+                <p>
+                    A apresentação cultural encerra a programação
+                    do dia com uma atividade dedicada às tradições
+                    e manifestações culturais japonesas.
+                </p>
+
+                <p>
+                    O objetivo é proporcionar aos visitantes uma
+                    experiência que vá além da gastronomia,
+                    aproximando o público da cultura oriental.
+                </p>
+            </div>
+        </article>
+
+    </div>
 </section>
+
 
 <section id="cardapio">
-
     <h2>Diversos produtos</h2>
 
-    <ul>
-        <li>Temaki</li>
-        <li>Sushi</li>
-        <li>Yakisoba</li>
-        <li>Guioza</li>
-    </ul>
+    <p>
+        Durante o festival você poderá experimentar
+        diversos pratos da culinária japonesa.
+    </p>
 
-    <figure>
+    <div class="pratos">
 
-        <img src="Yakisoba.png" alt="Prato de Yakisoba">
+        <article class="item-expansivel">
+            <div class="item-cabecalho">
+                <figure>
+                    <img src="assets/Pratos/Badejo.jpg" alt="Prato de Badejo">
+                    <figcaption>Badejo</figcaption>
+                </figure>
+            </div>
 
-        <figcaption>
-            Yakisoba Especial servido durante o evento.
-        </figcaption>
+            <div class="item-detalhes">
+                <p>
+                    O badejo é um peixe de carne branca e sabor suave,
+                    preparado de diferentes maneiras na culinária.
+                    Durante o festival, será apresentado como uma
+                    opção especial de degustação.
+                </p>
+            </div>
+        </article>
 
-    </figure>
 
+        <article class="item-expansivel">
+            <div class="item-cabecalho">
+                <figure>
+                    <img src="assets/Pratos/Sushi.jpg" alt="Prato de Sushi">
+                    <figcaption>Sushi</figcaption>
+                </figure>
+            </div>
+
+            <div class="item-detalhes">
+                <p>
+                    O sushi é um dos pratos mais conhecidos da culinária
+                    japonesa. É tradicionalmente preparado com arroz
+                    temperado e diferentes tipos de acompanhamentos.
+                </p>
+            </div>
+        </article>
+
+
+        <article class="item-expansivel">
+            <div class="item-cabecalho">
+                <figure>
+                    <img src="assets/Pratos/Temaki.jpg" alt="Temaki">
+                    <figcaption>Temaki</figcaption>
+                </figure>
+            </div>
+
+            <div class="item-detalhes">
+                <p>
+                    O temaki é um tipo de sushi apresentado em formato
+                    de cone, geralmente preparado com alga, arroz e
+                    diferentes recheios.
+                </p>
+            </div>
+        </article>
+
+
+        <article class="item-expansivel">
+            <div class="item-cabecalho">
+                <figure>
+                    <img src="assets/Pratos/Yakisoba.jpg" alt="Prato de Yakisoba">
+                    <figcaption>Yakisoba</figcaption>
+                </figure>
+            </div>
+
+            <div class="item-detalhes">
+                <p>
+                    O yakisoba é um prato de macarrão preparado com
+                    vegetais e outros ingredientes. É uma das opções
+                    gastronômicas oferecidas durante o festival.
+                </p>
+            </div>
+        </article>
+
+    </div>
 </section>
 
-<aside>
 
-    <h3>Renomados chefs</h3>
+<section id="chefs">
+    <h2>Renomados chefs</h2>
 
-    <ul>
-        <li>Arata Souta</li>
-        <li>Naomi Seiko</li>
-        <li>Ayumi Mika</li>
-        <li>Ema Yoki</li>
-    </ul>
+    <div class="chefs">
 
-</aside>
+        <article class="item-expansivel">
+            <div class="item-cabecalho">
+                <img src="assets/Chefs/Chef1.jpg" alt="Chef Arata Souta">
+                <h3>Arata Souta</h3>
+            </div>
 
-<section>
+            <div class="item-detalhes">
+                <p>
+                    Arata Souta é um dos chefs participantes do
+                    Festival de Degustação Japonesa, contribuindo
+                    para a preparação dos pratos apresentados
+                    durante o evento.
+                </p>
+            </div>
+        </article>
 
+
+        <article class="item-expansivel">
+            <div class="item-cabecalho">
+                <img src="assets/Chefs/Chef2.jpg" alt="Chef Naomi Seiko">
+                <h3>Naomi Seiko</h3>
+            </div>
+
+            <div class="item-detalhes">
+                <p>
+                    Naomi Seiko é uma das chefs participantes do
+                    festival e fará parte da programação gastronômica
+                    preparada para os visitantes.
+                </p>
+            </div>
+        </article>
+
+
+        <article class="item-expansivel">
+            <div class="item-cabecalho">
+                <img src="assets/Chefs/Chef3.jpg" alt="Chef Ayumi Mika">
+                <h3>Ayumi Mika</h3>
+            </div>
+
+            <div class="item-detalhes">
+                <p>
+                    Ayumi Mika é uma das chefs participantes do evento,
+                    contribuindo para a experiência gastronômica
+                    oferecida durante o festival.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<section id="video">
     <h2>Vídeo do Festival</h2>
 
-    <video controls width="500">
+    <p>
+        Confira um pouco mais sobre a cultura e a gastronomia japonesa.
+    </p>
 
-        <source src="festival.mp4" type="video/mp4">
-
-        Seu navegador não suporta vídeo.
-
-    </video>
-
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/UZApwPxsKsw"
+            title="Vídeo do Festival de Degustação Japonesa"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+    </div>
 </section>
 
-<section id="local">
 
+<section id="local">
     <h2>Local do Evento</h2>
 
     <p>
-        📍 <strong>Centro Cultural Oriental</strong><br>
+        <strong>Centro Cultural Oriental</strong><br>
         Rua Thomaz Gonzaga, 150 - Liberdade<br>
         São Paulo - SP
     </p>
 
-    <p>
-        Data: 20 e 21 de Setembro de 2026
-    </p>
+    <p>Data: 20 e 21 de Setembro de 2026</p>
+
+    <p>Horário: das 10h às 20h</p>
 
     <p>
-        Horário: das 10h às 20h
+        <strong>Entrada gratuita!</strong>
+        Toda a programação é aberta ao público.
     </p>
-
-    <p>
-        <strong>Entrada gratuita!</strong> Toda a programação é aberta ao público.
-    </p>
-
 </section>
 
 </main>
 
+
 <footer id="contato">
-
     <h2>Contato</h2>
-
     <p>E-mail: japones@gmail.com</p>
-
-    <p>📱 WhatsApp: (11) 98888-8888</p>
-
+    <p>WhatsApp: (11) 98888-8888</p>
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
