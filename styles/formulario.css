@@ -1,0 +1,135 @@
+.formulario-participacao {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.formulario-participacao h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.formulario-participacao > p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#formulario-participacao {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo-formulario label {
+    font-weight: 500;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--branco);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    border-color: var(--branco);
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.campo-formulario input::placeholder,
+.campo-formulario textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.campo-formulario select option {
+    color: #000;
+}
+
+.campo-formulario label:has(input[type="checkbox"]) {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.campo-formulario input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+.botao-reserva {
+    margin-top: 10px;
+    padding: 13px 20px;
+    border: 2px solid var(--branco);
+    border-radius: 8px;
+    background: var(--vermelho);
+    color: var(--branco);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-reserva:hover {
+    background: var(--branco);
+    color: var(--vermelho);
+}
+
+.mensagem-erro {
+    display: block;
+    margin-top: 5px;
+    color: #ffb3b3;
+    font-weight: 500;
+}
+
+.mensagem-sucesso {
+    display: block;
+    margin-top: 20px;
+    padding: 12px;
+    border: 2px solid var(--branco);
+    border-radius: 8px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+#mensagem-confirmacao {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .formulario-participacao {
+        width: 95%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario-participacao {
+        padding: 15px;
+    }
+}
